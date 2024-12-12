@@ -7,4 +7,6 @@ sudo apt update
 sudo apt install kibana
 sudo systemctl enable kibana
 sudo systemctl start kibana
+
+
 Accessing Kibana: Access the Kibana web interface at http://localhost:5601. Here you can configure dashboards and view logs stored in Elasticsearch.
