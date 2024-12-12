@@ -7,6 +7,7 @@ sudo apt update
 sudo apt install logstash
 sudo systemctl enable logstash
 sudo systemctl start logstash
+
 Basic configuration: Configure Logstash to read logs from a specific file or source (for example, Apache log files or syslog) and send them to Elasticsearch. Example logstash.conf configuration file:
 plaintext
 Copy code
