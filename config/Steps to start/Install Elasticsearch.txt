@@ -1,0 +1,12 @@
+Install Elasticsearch:
+
+OS: Linux (Ubuntu recommended).
+
+Installation:
+bash
+Copy code
+sudo apt update
+sudo apt install elasticsearch
+sudo systemctl enable elasticsearch
+sudo systemctl start elasticsearch
+Verification: You can verify if Elasticsearch is working properly by accessing http://localhost:9200 from your browser.
