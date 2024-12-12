@@ -1,0 +1,19 @@
+Installation:
+
+bash
+
+Copy code
+sudo apt install filebeat
+sudo systemctl enable filebeat
+sudo systemctl start filebeat
+Filebeat Configuration: Configure Filebeat to send logs to Logstash or Elasticsearch directly. Example filebeat.yml configuration:
+yaml
+
+Copy code
+filebeat.inputs:
+- type: log
+enabled: true
+paths:
+- /var/log/*.log
+output.elasticsearch:
+hosts: ["localhost:9200"]
