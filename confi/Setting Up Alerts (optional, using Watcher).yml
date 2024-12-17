@@ -1,5 +1,0 @@
-If you are using OpenDistro for Elasticsearch (alternative to the standard version of Elasticsearch), you can set up alerts to detect critical events in the logs. To do this, we enable and configure Watcher.
-
-Download OpenDistro for Elasticsearch: Download OpenDistro for Elasticsearch
-
-Setting Up Alerts in Kibana: Within Kibana, you can create "Watchers" to receive alerts in case certain patterns are detected in the logs (such as login failures or critical errors).
