@@ -1,0 +1,6 @@
+Now that you have all the tools installed, it's time to create dashboards and reports in Kibana.
+
+Steps to create dashboards in Kibana:
+Go to Kibana: http://localhost:5601.
+From the left menu, select Discover to view the logs in real time.
+Then, go to Dashboard and create new visualizations based on the logs stored in Elasticsearch.
