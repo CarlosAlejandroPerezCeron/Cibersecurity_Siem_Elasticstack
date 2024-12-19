@@ -1,0 +1,4 @@
+Elasticsearch Configuration Improvements
+
+
+Elasticsearch is the heart of the SIEM system, as it manages the indexing and searching of the logs. We can make some improvements to its configuration
