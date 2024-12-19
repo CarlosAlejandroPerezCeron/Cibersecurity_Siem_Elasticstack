@@ -1,0 +1,1 @@
+To test that everything is working, you can generate test events, such as sending logs from a web server (Apache, Nginx) or system events (such as failed login attempts). Use Filebeat or Logstash to send those logs to Elasticsearch and view them in Kibana.
