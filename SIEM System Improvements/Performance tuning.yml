@@ -1,0 +1,10 @@
+Configure Java memory to optimize performance.
+Edit the jvm.options configuration file in Elasticsearch to allocate appropriate memory:
+bash
+Copy code
+sudo nano /etc/elasticsearch/jvm.options
+Adjust the following lines based on the resources available on your machine:
+plaintext
+Copy code
+-Xms4g
+-Xmx4g
