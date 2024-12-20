@@ -1,0 +1,6 @@
+This ensures that old logs are archived efficiently without affecting performance. In the Elasticsearch configuration file (elasticsearch.yml), add the following:
+
+yaml
+Copy code
+index.lifecycle.enabled: true
+index.lifecycle.policy: my_index_policy
