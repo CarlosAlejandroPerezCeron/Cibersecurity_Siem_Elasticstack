@@ -1,0 +1,6 @@
+Enable basic authentication in Elasticsearch to ensure that only authorized users can access data. Edit the elasticsearch.yml configuration file to activate the security plugin:
+
+yaml
+Copy code
+xpack.security.enabled: true
+xpack.security.authc.realms.file1.type: file
