@@ -1,0 +1,11 @@
+You can add additional rules to filter and process logs more efficiently. Logstash filter example:
+
+plaintext
+Copy code
+filter {
+if [source] =~ "apache" {
+grok {
+match => { "message" => "%{COMBINEDAPACHELOG}" }
+}
+}
+}
