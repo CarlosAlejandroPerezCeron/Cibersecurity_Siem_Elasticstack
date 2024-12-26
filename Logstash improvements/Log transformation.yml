@@ -1,0 +1,11 @@
+To obtain more relevant information, perform transformations and aggregations. For example, adding login failure events:
+
+plaintext
+Copy code
+aggregate {
+ task_id => "%{user}"
+ code => "map['count'] ||= 0; map['count'] += 1"
+ timeout => 120
+ timeout_tags => ['_aggregatetimeout']
+ timeout_code => "event.set('failed_logins', map['count'])"
+}
