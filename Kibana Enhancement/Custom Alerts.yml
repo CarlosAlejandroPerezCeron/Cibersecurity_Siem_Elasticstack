@@ -1,0 +1,32 @@
+Set up alerts to detect suspicious behavior, such as multiple failed login attempts. You can do this with Watcher on Elastic Stack (if you use commercial Elastic Stack, if you use OpenDistro you can do it with Alerting):
+
+json
+Copy code
+{
+"trigger": {
+"schedule": {
+"interval": "5m"
+}
+},
+"input": {
+"search": {
+"request": {
+"indices": ["syslog-*"],
+"query": {
+"query_string": {
+"query": "event.type: 'failed_login'"
+}
+}
+}
+}
+},
+"actions": {
+"email_admin": {
+"email": {
+"to": ["admin@yourdomain.com"],
+"subject": "Failed login alert",
+"body": "Multiple failed login attempts detected."
+}
+}
+}
+}
